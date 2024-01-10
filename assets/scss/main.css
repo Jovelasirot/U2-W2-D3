@@ -86,7 +86,6 @@ nav .search-container .search-input {
 
 body {
   background-color: #eeeeee;
-  height: 100vh;
 }
 body main {
   height: 90vh;
@@ -143,14 +142,10 @@ body .left .leftbtn {
   background-color: #161414;
 }
 
-.hero {
-  position: relative;
-}
-
 .heroimg {
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -164,6 +159,7 @@ body .left .leftbtn {
 }
 
 .herotxt {
+  left: -10%;
   animation: fadeInFromLeft 1s ease-out forwards;
   animation-delay: 1s;
 }
