@@ -1,0 +1,35 @@
+body{
+    background-color: $primary-color;
+    height: 100vh;
+    main{
+        height: 90vh;
+        font-family: $satoshi-font;
+        color: $nav-color;
+        @include centery;
+        justify-content: space-around;
+        z-index: 2;
+    
+    }
+    .left{
+       font-size: 1.4rem;
+        .leftbtn {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+.heroimg{
+    width: 600px;
+    z-index: -1;
+}
+.herotxt{
+    color: $nav-color;
+    align-items: start;
+    font-size: 7rem;
+    font-weight: bold;
+    position: relative;
+    top: 15%;
+    left: -8%;
+    transform: translate(-50%, -50%);
+}

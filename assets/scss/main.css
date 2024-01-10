@@ -1,0 +1,209 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+nav {
+  background-color: #eeeeee;
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+nav .logo {
+  width: 80px;
+  padding: 10px 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+nav ul li {
+  margin-right: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #302D2D;
+  font-size: 1.5rem;
+}
+nav .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+nav .search-container .search-input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+  background-color: #ababac;
+  color: #302D2D;
+  border-radius: 10px;
+  border: none;
+}
+
+body {
+  background-color: #eeeeee;
+  height: 100vh;
+}
+body main {
+  height: 90vh;
+  font-family: "Satoshi", sans-serif;
+  color: #302D2D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+body .left {
+  font-size: 1.4rem;
+}
+body .left .leftbtn {
+  display: flex;
+  flex-direction: row;
+}
+
+.heroimg {
+  width: 600px;
+  z-index: -1;
+}
+
+.herotxt {
+  color: #302D2D;
+  align-items: start;
+  font-size: 7rem;
+  font-weight: bold;
+  position: relative;
+  top: 15%;
+  left: -8%;
+  transform: translate(-50%, -50%);
+}
+
+.leftbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.leftbtn button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #302D2D;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.leftbtn button:hover {
+  background-color: #161414;
+}
+
+.hero {
+  position: relative;
+}
+
+.heroimg {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.heroimg,
+.herotxt {
+  opacity: 0;
+}
+
+.heroimg {
+  animation: slideInFromTop 1s ease-out forwards;
+}
+
+.herotxt {
+  animation: fadeInFromLeft 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+@keyframes fadeInFromLeft {
+  0% {
+    transform: translate(-150%, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+aside {
+  font-family: "Satoshi", sans-serif;
+}
+aside h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+aside .imgbot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside .imgbot img {
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 25px;
+}/*# sourceMappingURL=main.css.map */

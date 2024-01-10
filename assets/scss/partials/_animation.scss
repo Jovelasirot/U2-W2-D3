@@ -1,0 +1,45 @@
+.hero {
+    position: relative;
+  }
+  .heroimg{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .heroimg,
+  .herotxt {
+    opacity: 0;
+  }
+  
+  .heroimg {
+    animation: slideInFromTop 1s ease-out forwards;
+  }
+  
+  .herotxt {
+    animation: fadeInFromLeft 1s ease-out forwards;
+    animation-delay: 1s; // Delay the start of herotxt animation by 1 second
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      transform: translate(-50%, -100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInFromLeft {
+    0% {
+      transform: translate(-150%, -50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  

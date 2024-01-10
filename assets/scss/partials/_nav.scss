@@ -1,0 +1,43 @@
+
+nav{
+    background-color: $primary-color;
+    font-family: $satoshi-font;
+    display: flex;
+    justify-content: space-around;
+    
+    .logo{
+      width: 80px;
+      padding: 10px 20px;
+    
+    }
+    ul{
+      @include centery;
+      padding: 10px 20px;
+      li{
+        margin-right: 10px;
+        a{
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $nav-color;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .search-container {
+      @include centery;
+      text-align: center;
+      
+    
+      .search-input {
+        padding: 10px;
+        width: 200px;
+        margin-right: 10px;
+        background-color: $secondary-color;
+        color: $nav-color;
+        border-radius: $button-border-radius;
+        border: none;
+      }
+    
+    }
+  }
+  

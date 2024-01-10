@@ -1,0 +1,15 @@
+aside{
+    font-family: $satoshi-font;
+   h1{
+    @include centery;
+    font-size: 3rem;
+   }
+   .imgbot{
+    @include centery;
+    img{
+        margin-top: 20px;
+        margin-right: 20px;
+        border-radius: 25px;
+    }
+   }
+}
