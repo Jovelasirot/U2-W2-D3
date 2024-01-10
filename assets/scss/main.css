@@ -68,21 +68,6 @@ nav ul li a {
   color: #302D2D;
   font-size: 1.5rem;
 }
-nav .search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-nav .search-container .search-input {
-  padding: 10px;
-  width: 200px;
-  margin-right: 10px;
-  background-color: #ababac;
-  color: #302D2D;
-  border-radius: 10px;
-  border: none;
-}
 
 .burger {
   width: 80px;

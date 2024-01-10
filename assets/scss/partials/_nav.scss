@@ -24,22 +24,6 @@ nav{
         }
       }
     }
-    .search-container {
-      @include centery;
-      text-align: center;
-      
-    
-      .search-input {
-        padding: 10px;
-        width: 200px;
-        margin-right: 10px;
-        background-color: $secondary-color;
-        color: $nav-color;
-        border-radius: $button-border-radius;
-        border: none;
-      }
-    
-    }
   }
   
   .burger{
